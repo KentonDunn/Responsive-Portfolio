@@ -219,12 +219,12 @@ input[type=submit] {
   background: #4aaaa5;
   border: 0 none;
 }
-
+/* Things I added  */
 .invisible{
   background: white;
   width: 100%;
   border: 1px solid #ddd;
-  padding: 0, 10px;
+  padding: 0 10px;
 }
 
 @media only screen and (max-width: 640px){
@@ -267,15 +267,35 @@ input[type=submit] {
   }
   .aside {
     float: left;
-    text-align: center;
     width: 100%;
-    padding: 10px;
-  }  
+    padding: 10px 10px;
+  }
 }
 
 @media only screen and (max-width: 768px){
   #masthead {
     padding: 0 15px;
+    position: relative;
+  }
+  .aside {
+    float: left;
+    width: 100%;
+    padding: 10px 10px;
+  }
+  .main-section{
+    width: 100% !important;
+  }
+
+  #main-container {
+    padding-top: 15px;
+    width: 100%;
   }
 }
 
+@media only screen and (max-width: 980px){
+  .auth-image {
+    float: none;
+    width: 100%;
+  }
+
+}
