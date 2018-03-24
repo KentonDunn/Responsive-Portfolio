@@ -135,6 +135,7 @@ h3, h2 {
   float: left;
   width: 66%;
   padding: 0 10px;
+  background-color: white;
    
 }
 
@@ -223,7 +224,6 @@ input[type=submit] {
 .invisible{
   background: white;
   width: 100%;
-  border: 1px solid #ddd;
   padding: 0 10px;
 }
 
@@ -270,11 +270,24 @@ input[type=submit] {
     width: 100%;
     padding: 10px 10px;
   }
+  /*Portfolio.html responsiveness*/
+  .work {
+    width: 100%;
+  }
+  .main-section {
+    padding: 0 25px;
+    background-color: white;
+     
+  }
+
+  .work:nth-child(even) {
+    margin-right: 0px;
+  }
 }
 
 @media only screen and (max-width: 768px){
   #masthead {
-    padding: 0 15px;
+    padding: 0;
     position: relative;
   }
   .aside {
@@ -289,6 +302,11 @@ input[type=submit] {
   #main-container {
     padding-top: 15px;
     width: 100%;
+  }
+
+  /*Portfolio.html responsiveness*/
+  #masthead {
+    padding-left: 15px;
   }
 }
 
